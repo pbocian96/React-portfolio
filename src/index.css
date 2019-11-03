@@ -1,0 +1,76 @@
+:root{
+    --main-bg-color: #0D0A0B;
+    --font-color: #EEF0F2;
+    --hover-color: #D81159;
+    --different: #23022E;
+    }
+    
+
+h1{
+    font-family: 'Press Start 2P', cursive;
+    animation: pulse 5s linear infinite;
+    animation-delay: 2s;
+}
+
+.container {
+    animation: appear 2s ease-in-out;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:50vw;
+    height: 50vh;
+}
+
+.welcome {
+    animation: floating 2s ease-in-out infinite;
+    animation-delay: 2s;
+    padding: 10px;
+
+    
+}
+
+@keyframes floating {
+    0% {
+        margin-top:0px;
+    }
+    50% {
+        transform: rotateY(6deg);
+        margin-top:30px;
+    }
+    100% {
+        margin-top:0px;
+    }
+
+}
+
+@keyframes pulse {
+    0%, 3%, 9%, 12%, 15%  {
+        color: var(--different);
+        text-shadow: 7px 7px var(--font-color);
+    }
+    2%, 5%, 8%, 11%, 14% {
+        text-shadow: 7px 7px var(--hover-color);
+        color: var(--font-color);
+    }
+    15%  {
+        color: var(--font-color);
+        text-shadow: none;
+    }
+
+}
+
+@keyframes appear {
+    0% {
+        opacity:0%;
+        margin-top:100px;
+    }
+    70%{
+        opacity:100%;
+        margin-top:0px;
+        margin-bottom:20px;
+    }
+    100%{
+        margin-bottom:0px;
+    }
+}

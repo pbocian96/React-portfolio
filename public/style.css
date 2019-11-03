@@ -1,0 +1,18 @@
+:root{
+    --main-bg-color: #0D0A0B;
+    --font-color: #EEF0F2;
+    --hover-color: #D81159;
+    --different: #23022E;
+    }
+    
+
+body{
+    background-color: var(--main-bg-color);
+    overflow: hidden;
+    height: 100vh;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

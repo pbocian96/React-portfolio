@@ -1,0 +1,51 @@
+:root{
+--main-bg-color: #0D0A0B;
+--font-color: #EEF0F2;
+--hover-color: #D81159;
+--different: #23022E;
+--different2: #ADA8B6;
+}
+
+
+.menu{
+    float: left;
+    margin-right: 20px;
+    animation: levitate 2.5s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+button{
+    display:block;
+    background: none;
+    color: var(--font-color);
+    border: 2px solid var(--font-color);
+    width:200px;
+    height:60px;
+    margin-top:10px;
+    font-family: 'Orbitron', sans-serif;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 5px 5px var(--font-color);
+}
+
+button:hover, button:focus{
+    color: var(--hover-color);
+    border: 3px solid var(--hover-color);
+    transform: scale(1.1);
+    box-shadow: none;
+}
+
+
+@keyframes levitate{
+    0% {
+        margin-top:0px;
+    }
+    50% {
+        transform: rotateX(15deg);
+        margin-top:30px;
+    }
+    100% {
+        margin-top:0px;
+    }
+
+}
